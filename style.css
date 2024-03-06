@@ -1,0 +1,874 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #353535;
+  letter-spacing: -0.5px;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 20vw;
+  border: 2px solid rgba(114, 114, 114, 0.1);
+  border-radius: 10px;
+  padding: 1vh 0.5vw;
+  font-size: medium;
+}
+
+/* sidebar top header start */
+
+.sidebar .head {
+  height: 7vh;
+  width: 100%;
+  padding: 0 0.8vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.sidebar .head .logo {
+  height: 5.3vh;
+  width: 2.6vw;
+  border-radius: 20%;
+  background: url("/assets/sidebar/diamond-svgrepo-com.svg");
+}
+
+.sidebar .head .headings {
+  width: 8vw;
+  display: flex;
+  flex-direction: column;
+  color: rgb(24, 24, 24);
+  padding: 2px 3px;
+}
+
+.sidebar .head .headings .I {
+  font-size: small;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.sidebar .head .headings .II {
+  font-size: large;
+  font-weight: 550;
+}
+
+.sidebar .head .avatar {
+  height: 4vh;
+  width: 1.8vw;
+  background: url("https://cdn.dribbble.com/users/654620/avatars/normal/733439397940c7f37b994579b00249d9.png?1650643147");
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 5vw;
+}
+
+/* sidebar menu (below header) starts */
+.sidebar .menu {
+  width: 100%;
+  height: 18vh;
+  margin-top: 1vh;
+  padding: 1vh 0.5vw;
+  border: 2px solid rgba(114, 114, 114, 0.06);
+  border-radius: 15px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.sidebar .menu button {
+  height: 5vh;
+  width: 100%;
+  margin: 2px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 0.5vw;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .sidebar .menu button:hover{
+  background-color: #F4F5F6;
+} */
+
+.sidebar .menu button:focus {
+  background-color: #f4f5f6;
+}
+
+.sidebar .menu button[focus] > .sidebar .menu button .ibtn {
+  background-color: white;
+}
+
+.sidebar .menu button .iLabel {
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.sidebar .menu button .iLabel span {
+  font-size: medium;
+  color: #353535;
+  width: auto;
+  padding: -1vw;
+}
+
+.sidebar .menu button .iLabel img {
+  width: 1.5vw;
+  height: 2vh;
+  scale: 120%;
+}
+
+.sidebar .menu button .ibtn {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: #efefef;
+}
+
+.sidebar .menu button .ibtn span {
+  font-size: 12px;
+  color: gray;
+  width: auto;
+  padding: -1vw;
+}
+
+.sidebar .menu button .ibtn img {
+  width: 1vw;
+  height: 2vh;
+  scale: 100%;
+}
+
+.sidebar .menu-b {
+  width: 100%;
+  height: 7vh;
+  padding: 1.5vh 1.3vw;
+  border: 2px solid rgba(114, 114, 114, 0.06);
+  border-top: none;
+  border-radius: 15px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.sidebar .menu-b:hover {
+  color: black;
+}
+
+.sidebar .menu-b span {
+  font-size: medium;
+  color: #9c9c9c;
+}
+
+.sidebar .menu-b img {
+  height: 1.5vh;
+  width: 1vw;
+  margin-right: 5px;
+  scale: 170%;
+}
+
+/* sidebar dropdown folders start */
+
+.sidebar .folders {
+  width: 100%;
+  height: 50%;
+  margin: 1vh 0;
+  /* font-weight: 600; */
+  padding: 1vh 0.5vw;
+}
+
+.sidebar .folders .heading {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 11vw;
+}
+
+.sidebar .folders .heading span {
+  font-size: small;
+  font-weight: 700;
+  color: #9c9c9c;
+}
+
+.sidebar .folders .heading .plusicon {
+  scale: 130%;
+}
+
+details .newbtn {
+  height: auto;
+  color: #9c9c9c;
+  display: flex;
+}
+
+.sidebar .folders details .newbtn img {
+  width: 1vw;
+  height: 1vh;
+  scale: 120%;
+}
+
+summary,
+.summary {
+  height: 5vh;
+  /* width: 17vw; */
+  font-size: medium;
+  padding: 5px 2px;
+  border-radius: 8px;
+  margin-bottom: 1vh;
+  transition: all ease 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+summary:focus {
+  background-color: #f4f5f6;
+}
+
+summary:hover {
+  background-color: #f4f5f6;
+}
+
+summary img,
+.summary img {
+  width: 1.8vw;
+  height: 2vh;
+  scale: 140%;
+  margin-right: 1%;
+}
+
+summary::after {
+  content: "";
+  width: 10px;
+  height: 8px;
+  background: url("/assets/sidebar/triangle-down-svgrepo-com.svg");
+  background-size: cover;
+  margin-left: 10.1vw;
+  transition: 0.2s;
+}
+
+.sales::after{
+  margin-left: 11.6vw;
+}
+
+.design::after{
+  margin-left: 11vw;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+option {
+  padding: 1vh 3vw;
+  font-size: medium;
+}
+
+.sidebar .folders .heading img {
+  height: 1.5vh;
+  width: 1vw;
+}
+
+#folder {
+  padding: 10px 2px;
+  border-radius: 8px;
+  margin-bottom: 0.5vh;
+  transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#folder img {
+  width: 2.5vw;
+  height: 2.5vh;
+  margin-right: -5px;
+}
+/* sidebar dropdown folders ends */
+
+/* sidebar footer start */
+.sidebar-footer {
+  margin: 0 0.5vw;
+}
+
+.sidebar-footer div {
+  font-size: medium;
+}
+
+.sidebar-footer div .helpspan {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background-color: rgb(233, 233, 233);
+  margin-left: 4vw;
+  font-size: small;
+  color: #9c9c9c;
+}
+
+.sidebar-footer .trialbtn {
+  background-color: #ededed;
+}
+
+.sidebar-footer .trialbtn span {
+  padding: 1px 5px;
+  margin: 0 8px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.sidebar-footer .trialbtn .blk {
+  padding: 5px 5px;
+  margin-left: 2.7vw;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #dadada;
+  background-color: rgb(50, 50, 50);
+}
+
+/* sidebar footer ends */
+
+/* product page start here */
+.product-page {
+  height: 100vh;
+  width: 77vw;
+  border: 2px solid rgba(114, 114, 114, 0.103);
+  border-radius: 10px;
+}
+
+/* top navbar */
+.product-page .navbar {
+  height: 8vh;
+  padding: 0 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #7272721a;
+}
+.product-page .navbar #heading {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.product-page .navbar .searchbar {
+  width: 13vw;
+  height: 4.5vh;
+  padding: 0 4px;
+  padding-top: 2px;
+  display: flex;
+  text-align: center;
+  border: 2px solid #7272721a;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.product-page .navbar .searchbar:hover {
+  border: 2px solid black;
+}
+
+.product-page .navbar .searchbar input {
+  width: 80%;
+  height: 80%;
+  outline: none;
+  border: none;
+  position: absolute;
+}
+
+.product-page .navbar .searchbar input::placeholder {
+  color: #9e9e9e;
+  font-weight: 500;
+}
+.product-page .navbar .searchbar img {
+  width: 1vw;
+  height: 1.1vw;
+  margin: 0 5px;
+  margin-top: 4px;
+}
+
+.product-page .navbar .navitems {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.product-page .navbar .navitems button {
+  width: 2vw;
+  height: 4.5vh;
+  /* padding: 2px; */
+  background-color: white;
+  border: 2px solid rgba(114, 114, 114, 0.06);
+  border-radius: 10px;
+  position: relative;
+}
+
+.product-page .navbar .navitems .chatbtn {
+  background: url(/assets/sidebar/chat-conversation-svgrepo-com.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-page .navbar .navitems .settingbtn {
+  background: url(/assets/sidebar/gear-six-duotone-svgrepo-com.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-page .navbar div button img {
+  scale: 70%;
+}
+
+.product-page .menubar {
+  padding: 1vh 2vw;
+  height: 8vh;
+  border-bottom: 2px solid #7272721a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-page .menubar .container,
+.container2 {
+  display: flex;
+  gap: 1vw;
+}
+
+.product-page .menubar .container2 .xl {
+  width: 11vw;
+  height: 5vh;
+  font-size: 15px;
+  padding: 2px 1px;
+  padding-right: 4px;
+  outline: none;
+  border: 2px solid #7272721a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -2px;
+  cursor: pointer;
+}
+
+.product-page .menubar .container2 .xl img {
+  scale: 35%;
+  margin: 0 -1vw;
+  margin-left: -2vw;
+}
+
+.product-page .menubar div .dropitem {
+  width: 8vw;
+  height: 5vh;
+  font-size: 15px;
+  outline: none;
+  border: 2px solid #7272721a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -2px;
+  cursor: pointer;
+}
+
+.product-page .menubar .dropitem select option {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.product-page .menubar .dropitem img {
+  scale: 55%;
+  width: 2vw;
+}
+
+.product-page .menubar div select,
+.dropitem select {
+  font-size: medium;
+  /* font-weight: 700; */
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-page .menubar div .sm {
+  width: 4.5vw;
+  padding-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.product-page .menubar div .gray {
+  color: #898989;
+  background-color: #fcfcfc;
+  font-weight: 500;
+  border: 2px dotted #7272721a;
+}
+
+.product-page .menubar div .sm img {
+  scale: 75%;
+}
+
+/* product section start */
+
+.product-section .title {
+  height: 6vh;
+  font-size: medium;
+  border-bottom: 2px solid #7272721a;
+  display: flex;
+  justify-content: center;
+}
+
+.product-section .title div input[type="checkbox"] {
+  accent-color: black;
+  border: 2px solid #dadada66;
+  height: 2.5vh;
+  width: 2.5vw;
+}
+
+.product-section .title div input[type="checkbox"]:checked > {
+
+}
+
+.product-section #head div span {
+  font-size: medium;
+  color: #9e9e9e;
+  font-weight: 550;
+}
+
+.product-section .title .cell,
+.xl {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .4vh 0vw;
+  padding-left: 1.5vw;
+  border-right: 2px solid #7272721a;
+  /* background-color: red; */
+}
+
+.product-section .title .cell div{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.product-section .title .cell div .icon{
+  height: 3.2vh;
+  width: 1.4vw;
+  background: url(/assets/sidebar/logo-medium-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: -4px;
+  margin-right: 4px;
+  border: none;
+  border-radius: 5px;
+}
+
+#shopify{
+  background: url(/assets/sidebar/shopify-color-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#mailch{
+  background: url(/assets/sidebar/mailchimp-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#paypal{
+  background: url(/assets/sidebar/paypal-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#disney{
+  background: url(/assets/sidebar/brand-disney-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#intercom{
+  background: url(/assets/sidebar/intercom-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#google{
+  background: url(/assets/sidebar/google-color-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#evernote{
+  background: url(/assets/sidebar/evernote-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#micro{
+  background: url(/assets/sidebar/microsoft-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#invi{
+  background: url(/assets/sidebar/invision-icon-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.product-section .title .cell #plusnew{
+  margin-right: -1vw;
+  scale: 15%;
+}
+
+.product-section .title .lgr {
+  width: 22%;
+  padding-left: 1vw;
+}
+
+.product-section .title .lg {
+  width: 18%;
+  padding-left: 1vw;
+}
+
+.product-section .title .md {
+  width: 12%;
+  padding-left: 0.5vw;
+  /* border: none; */
+}
+
+.product-section .title .sm {
+  width: 4%;
+  padding-left: 1vw;
+  border: none;
+}
+
+.product-section .title div img {
+  scale: 20%;
+}
+
+.product-section .content {
+  /* padding: 1vh 2vw; */
+  height: 6vh;
+  /* color: #9e9e9e; */
+  border-bottom: 2px solid #7272721a;
+  display: flex;
+}
+
+.product-section .content .cell .avt-container{
+  display: inline-flex;
+  /* flex-direction: row-reverse; */
+}
+
+.product-section .content .cell .avt-container div{
+  height: 4vh;
+  width: 1.8vw;
+  background: url("https://cdn.dribbble.com/users/654620/avatars/normal/733439397940c7f37b994579b00249d9.png?1650643147");
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.product-section .content .cell .avt-container div:not(:last-child) {
+  margin-right: -8px;
+}
+
+.product-section .content .cell .tags{
+  height: 5vh;
+  width: 100%;
+  display: inline-flex;
+  gap: 2px;
+  overflow: scroll;
+}
+.product-section .content .cell .tags span{
+  width: auto;
+  height: 3.2vh;
+  font-size: small;
+  font-weight: 550;
+  padding: 2.5px 5px;
+  color: 2px solid #686868;
+  border-radius: 7px;
+  color: #9e9b9b;
+  background-color: #f1f1f1;
+}
+
+.product-section .content .cell .tags .purple{
+  color: #764DCD;
+  background-color: #F8F3FE;
+  border: 2px solid #e6d2ff88;
+}
+
+/* footer start*/
+
+footer {
+  height: 8vh;
+  color: #686868;
+  margin-top: 25vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  height: 100%;
+  width: 35%;
+  padding: 0 1vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid #7272721a;
+}
+
+footer div .counter {
+  color: #686868;
+  padding: 2px 6px;
+  color: white;
+  font-size: small;
+  border-radius: 5px;
+  background-color: black;
+}
+
+
+footer div button{
+  padding: 4px 4px;
+  padding-right: 6px;
+  border-color: #6868681e;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+}
+
+footer div button img{
+  height: 1.8vh;
+  width: 1.5vw;
+}
+
+footer div .dlt{
+  color: #9c0000;
+}
+
+footer div .dlt img{
+  height: 2vh;
+  width: 1.5vw;
+}
+
+footer div .tri{
+  padding-right: 0;
+}
+
+footer div .tri img{
+  height: 1.5vh;
+  width: 1.5vw;
+}

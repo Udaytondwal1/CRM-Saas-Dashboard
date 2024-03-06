@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>K-RITE Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- main section -->
+  <section class="main">
+    <!-- sidebar/navbar -->
+    <aside class="sidebar">
+      <div class="head">
+        <div class="logo">
+        </div>
+
+        <div class="headings">
+          <span class="I">INC</span>
+          <span class="II">InnovateHub </span>
+        </div>
+        <div class="avatar">
+        </div>
+      </div>
+      <div class="menu">
+        <button>
+          <div class="iLabel">
+            <img src="/assets/sidebar/pen-tool-svgrepo-com.svg" alt="">
+            <span>Design team</span>
+          </div>
+          <div class="ibtn">
+            <img src="/assets/sidebar/command-svgrepo-com.svg" alt="">
+            <span>+ 1</span>
+          </div>
+        </button>
+        <button>
+          <div class="iLabel">
+            <img src="/assets/sidebar/speaker-ui-svgrepo-com.svg" alt="">
+            <span>Marketing Team</span>
+          </div>
+          <div class="ibtn">
+            <img src="/assets/sidebar/command-svgrepo-com.svg" alt="">
+            <span>+ 2</span>
+          </div>
+        </button>
+        <button>
+          <div class="iLabel">
+            <img src="/assets/sidebar/code-alt-svgrepo-com.svg" alt="">
+            <span>Development Team</span>
+          </div>
+          <div class="ibtn">
+            <img src="/assets/sidebar/command-svgrepo-com.svg" alt="">
+            <span>+ 3</span>
+          </div>
+        </button>
+      </div>
+      <div class="menu-b">
+        <img src="/assets/sidebar/plus-square-svgrepo-com (3).svg" alt="" /><span>Create a team</span>
+      </div>
+      <div class="folders">
+        <div class="heading">
+          <span>FOLDERS</span><span class="plusicon"><img src="/assets/sidebar/plus-s-svgrepo-com (1).svg"
+              alt=""></span>
+        </div>
+        <details>
+          <summary><img src="/assets/sidebar/folder-svgrepo-com.svg" alt="">Products</summary>
+          <option value="">Roadmap</option>
+          <option value="">Feedback</option>
+          <option value="">Performance</option>
+          <option value="">Team</option>
+          <option value="">Analytics</option>
+          <option class="newbtn"><img src="/assets/sidebar/plus-square-svgrepo-com.svg" alt=""><span>Add new sub</span>
+          </option>
+        </details>
+        <details>
+          <summary class="sales"><img src="/assets/sidebar/folder-svgrepo-com.svg" alt="">Sales</summary>
+          <option value="">Roadmap</option>
+          <option value="">Feedback</option>
+          <option value="">Performance</option>
+          <option value="">Team</option>
+          <option value="">Analytics</option>
+          <option class="newbtn" value=""><img src="/assets/sidebar/plus-s-svgrepo-com (1).svg" alt=""><span>Add new
+              sub</span>
+          </option>
+        </details>
+        <details>
+          <summary class="design"><img src="/assets/sidebar/folder-svgrepo-com.svg" alt="">Design</summary>
+          <option value="">Roadmap</option>
+          <option value="">Feedback</option>
+          <option value="">Performance</option>
+          <option value="">Team</option>
+          <option value="">Analytics</option>
+          <option class="newbtn" value=""><img src="/assets/sidebar/plus-square-svgrepo-com.svg" alt=""><span>Add new
+              sub</span>
+          </option>
+        </details>
+        <div class="summary"><img src="/assets/sidebar/folder-svgrepo-com.svg" alt="">Office</div>
+        <div class="summary"><img src="/assets/sidebar/folder-svgrepo-com.svg" alt="">Legal</div>
+      </div>
+      <!-- sidebar footer -->
+      <div class="sidebar-footer">
+        <div id="folder"><img src="/assets/sidebar/add-user-svgrepo-com.svg" alt="">Invite teammates</div>
+        <div id="folder"><img src="/assets/sidebar/help-circle-svgrepo-com.svg" alt="">Help and first steps<span
+            class="helpspan">0/6</span></div>
+        <div id="folder" class="trialbtn"><span>7</span>days left on trial <span class="blk">Add billing</span></div>
+      </div>
+    </aside>
+
+    <!-- product page -->
+    <section class="product-page">
+      <nav class="navbar">
+        <div id="heading">Products</div>
+        <div class="navitems">
+          <div class="searchbar">
+            <div><img src="/assets/sidebar/search-2-svgrepo-com.svg" alt=""><input type="text"
+                placeholder="Search for..." id="search" onkeyup="searchFun()"></div>
+          </div>
+          <button class="chatbtn"></button>
+          <button class="settingbtn"></button>
+        </div>
+      </nav>
+      <div class="menubar">
+        <div class="container">
+          <div class="dropitem">
+            <img src="/assets/sidebar/menu2-svgrepo-com.svg" alt="">
+            <select name="brands" id="menuitem">
+              <option value="">All brands</option>
+              <option value="">All brands</option>
+              <option value="">All brands</option>
+            </select>
+          </div>
+
+          <select name="desk" class="dropitem sm">
+            <option value="">Desk</option>
+          </select>
+          <select name="desk" class="dropitem sm">
+            <option value="">Tags</option>
+          </select>
+          <div class="dropitem sm gray"><img src="/assets/product page/sort-numeric-down-svgrepo-com.svg" alt="">Sort
+          </div>
+          <div class="dropitem sm gray"><img src="/assets/product page/filter-svgrepo-com.svg" alt="">Filter</div>
+        </div>
+        <div class="container2">
+          <div class="dropitem lg"><img src="/assets/product page/plus-frame-svgrepo-com (1).svg" alt="">Meeting</div>
+          <div class="xl"><img src="/assets/product page/download-svgrepo-com.svg" alt="">Import / Export</div>
+        </div>
+      </div>
+      <div>
+      </div>
+      </div>
+      <section class="product-section" id="products">
+        <div class="title" id="head">
+          <div class="cell xl">
+            <div><span><input type="checkbox" name="" id="checkbox"> Brand</span></div> <img
+              src="/assets/sidebar/plus-s-svgrepo-com (1).svg" alt="" id="plusnew">
+          </div>
+          <div class="cell lgr"><span>Description</span>
+          </div>
+          <div class="cell lg"><span>Members</span>
+          </div>
+          <div class="cell lg"><span>Categories</span>
+          </div>
+          <div class="cell lg"><span>Tags</span>
+          </div>
+          <div class="cell md"><span>Next Meeting</span>
+          </div>
+          <div class="cell sm"><span>+</span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2">
+              <input type="checkbox" name="" id="">
+              <div class="icon"></div>
+              <p>Wix</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="shopify"></div><p>Shopify</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Introduce a cloud-based p...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="mailch"></div><p>MailChimp</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="paypal"></div><p>PayPal</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="disney"></div><p>Disney</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Introduce a B2B Solution f...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="intercom"></div><p>Intercom</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="google"></div><p>Google</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="evernote"></div><p>Evernote</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="micro"></div><p>Microsoft</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+        <div class="content title" id="myproduct">
+          <div class="cell xl" id="wrap1">
+            <div id="wrap2"><input type="checkbox" name="" id="">
+              <div class="icon" id="invi"></div><p>Invision</p>
+            </div>
+          </div>
+          <div class="cell lgr"><span>Develop a personalized fit...</span>
+          </div>
+          <div class="cell lg">
+            <div class="avt-container">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span class="purple">Automation</span>
+            </div>
+          </div>
+          <div class="cell lg scroll">
+            <div class="tags">
+              <span>#DigitalTransformation</span>
+              <span>#DigitalTransformation</span>
+
+            </div>
+          </div>
+          <div class="cell md scroll">
+            <div class="tags">
+              <span>In 30 Minutes</span>
+            </div>
+          </div>
+          <div class="cell sm"><span></span>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <span class="counter">3</span>
+          <span>Selected</span>
+          <button><img src="/assets/sidebar/archive-svgrepo-com (1).svg" alt="">Archive</button>
+          <button class="dlt"><img src="/assets/sidebar/delete-alt-svgrepo-com.svg" alt="">Delete</button>
+          <button class="tri">More <img src="/assets/sidebar/triangle-down-svgrepo-com.svg" alt=""></button>
+        </div>
+      </footer>
+    </section>
+  </section>
+  <script>
+    
+const searchFun = () => {
+  console.log("running")
+   let filter = document.getElementById('search').value.toLowerCase();
+   
+   let products = document.querySelector('#products');
+   let myproduct = products.querySelectorAll('#myproduct');
+   console.log(myproduct.length)
+
+   for(i=0; i < myproduct.length; i++ ){
+    let wrap1 = myproduct[i].querySelector('#wrap1');
+    let wrap2 = wrap1.querySelector('#wrap2');
+    let p = wrap2.querySelector('p'); 
+    console.log(p)
+    if(p){
+        let textValue = p.textContent || p.innerHTML;
+        console.log(textValue)
+        if(textValue.toLowerCase().indexOf(filter) > -1){
+            myproduct[i].style.display = "";
+        }else{
+            myproduct[i].style.display = "none";
+        }
+    }
+   }
+}
+
+
+  </script>
+</body>
+
+</html>
